@@ -1,2 +1,2 @@
-#Eric's Resume
-####Written in LaTeX
+# Eric's Resume
+#### Written in LaTeX
