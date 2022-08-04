@@ -1,145 +1,133 @@
-\documentclass[8pt]{resumeclass}
-%\documentclass[9pt]{backup_resumeclass}
+\documentclass[12pt]{resumeclass}
 
 \begin{document}
 
+\vspace{12pt}
 %-----------------------------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFO
 %-----------------------------------------------------------------------------------------------------------
+\centerline{\textbf{\LARGE{Eric Kearney}}}
+\vspace{2pt}
+\centerline{\textbf{\large{Machine Learning Engineer}}}
+\vspace{2pt}
+\centerline{303 596 5371 $|$ \href{mailto:erickearney@protonmail.com}{erickearney@protonmail.com} $|$ \href{https://github.com/erkearney}{github.com/erkearney} $|$ \href{https://aeryck.com}{aeryck.com}}
+\vspace{2pt}
+\rule{\textwidth}{0.4pt}
+\vspace{0.5pt}
 
-\begin{minipage}[t]{0.55\textwidth}							% Use 65% of the page for name
-	\vspace{-\baselineskip}								% Vertically align minipage
+%-----------------------------------------------------------------------------------------------------------
+%	Skills
+%-----------------------------------------------------------------------------------------------------------
+\resumesect
+    {Skills}
+    {\textbf{Languages:} \normalsize{Python (PyTorch, TensorFlow, NumPy, Pandas, Flask, OpenCV, PySpark, Jupyter), C/C++, Java, XML, SQL (PostgreSQL, MySQL, SQLite, SQLalchemy)}
 
-	\colorbox{black}{\huge\textcolor{white}{\textbf{\MakeUppercase{Eric}}}}
 
-	\colorbox{black}{\huge\textcolor{white}{\textbf{\MakeUppercase{Kearney}}}}
-	
-	\vspace{6pt}
+    \vspace{3pt}
+    \textbf{Tools:} \normalsize{Linux (Fedora/Red Hat, Debian/Ubuntu), Git, Docker,  AWS, Docker, Apache Spark \& Hadoop, CI/CD Tools (Jenkins, Jira, Confluence)}
 
-	{\huge Software Engineer}
-\end{minipage}
-\begin{minipage}[t]{0.45\textwidth}							% Use 35% of the page for contact information
-	\vspace{-\baselineskip}
-	\vspace{15pt}
-	\colorbox{black}{\textcolor{white}{\textbf{\MakeUppercase{Contact}}}}\\
-	{{\href{mailto:erickearney@protonmail.com}{\textbf{erickearney@protonmail.com}}} \hspace*{\fill} {\href{https://aeryck.com}{\textbf{aeryck.com}}} \\
-	{\href{https://github.com/erkearney}{\textbf{github.com/erkearney}}} \hspace*{\fill} \textbf{303 596 5371}}
-\end{minipage}
 
-\vspace{3pt}
+    \vspace{3pt}
+    \textbf{Development Processes:} \normalsize{Agile, Scrum, DevOps}}
 
+
+\vspace{12pt}
 %-----------------------------------------------------------------------------------------------------------
 %	Experience
 %-----------------------------------------------------------------------------------------------------------
+\resumesect
+    {Experience}
+    {\textbf{\large{Raytheon Technologies -- Aurora, CO}} \hfill \textbf{Aug. 2019 - Present}
 
-\resumesect{Experience}
-\colorbox{black}{\small\textcolor{white}{\textbf{\MakeUppercase{Raytheon Technologies -- Aurora, CO}}}}
-\vspace{6pt}
 
-\begin{entrylist}
-	\entry
-		{Nov. 2021 -- Present}
-		{Joint Polar Satellite System}
-		{Software Engineer}
-		{Supported after release, responsibilities included bug-fixing, code cleanup, and reconfiguring various subsystems to dynamically meet customer needs.}
-	\entry
-		{Mar. 2021 -- Nov. 2021}
-		{HP Replacement of IBM Products}
-		{Scurm Master}
-		{Served as a Scrum master to the completion of a server infrastructure migration project. Responsibilites included running daily standups, flowing progress up the proper lines of communication, and quickly eliminating blockers for developers.}
-	\entry
-		{Aug. 2019 -- Mar. 2021}
-		{GPS-OCX}
-		{Software Engineer / Discrepency Report Lead}
-		{Served as a test engineer and debugger. Processed reported issues and discrepencies into work orders. Identified high priority issues and helped determine which engineer(s) would be best suited to each task.}
-\end{entrylist}
+    \vspace{3pt}
+    \experiencesect
+	{Software Engineer}
+	{Joint Polar Satellite System}
+	{Nov. 2021 - Present}
+	{\begin{itemize}[noitemsep,nolistsep]
+	    \item Supported the File Transfer System by correcting bugs discovered by other engineers and end-users
+	    \item Developed new features to streamline and simplify development process
+	    \item Refactored code after release to improve readability and efficiency
+	    \item Dynamically reconfigured system to meet changing customer needs
+	\end{itemize}}
 
+
+    \vspace{3pt}
+    \experiencesect
+	{Scrum Master}
+	{HP Replacement of IBM Products}
+	{Mar. 2021 - Nov. 2021}
+	{\begin{itemize}[noitemsep,nolistsep]
+	    \item Organized small team during the process of migrating server infastructure
+	    \item Ran quick and effective daily standups
+	    \item Effeciently eliminated blockers
+	    \item Team was consistently a top performer
+	\end{itemize}}
+
+
+    \vspace{3pt}
+    \experiencesect
+	{Test Engineer}
+	{GPS-OCX}
+	{Aug. 2019 - Mar. 2021}
+	{\begin{itemize}[noitemsep,nolistsep]
+	    \item Wrote clean, low overhead unit and functional tests
+	    \item Processed reported issues and discrepencies into work orders
+	    \item Identified high priority issues and worked closely with leadership to help determine which engineer(s) would be best suited to individual tasks
+	\end{itemize}}}
+
+
+\vspace{12pt}
 %-----------------------------------------------------------------------------------------------------------
-%	PROJECTS
+%	Projects
 %-----------------------------------------------------------------------------------------------------------
+\resumesect
+    {Projects}
+    {\textbf{Movie Box Office Predictor}
+    {\begin{itemize}[noitemsep,nolistsep]
+	\item Worked with a small team to create a model that predicts IMDB ratings, Rotten Tomatoes user and critic score, and Box office performance of movies
+	\item Manipulated data obtained from many sources and joined them together into a single data table
+    \end{itemize}}
 
-\resumesect{Highlighted Projects}
 
-\begin{entrylist}
-	\entry
-		{Jan. 2022 - May 2022}
-		{Graduate-level Machine Learning Term Project}
-		{Reinforcement Learning}
-		{\vspace{-4mm}\begin{itemize}[noitemsep,nolistsep]
-			\small
-			\item Created a model that determines optimal bets to maximize returns based on the state of the deck using the Hi-Lo card counting strategy.
-			\item Developed in a Jupyter notebook using PyTorch and a Kaggle dataset.
-		\end{itemize}}
-	\entry
-		{Jan. 2022 - May 2022}
-		{Graduate-level Big Data Term Project}
-		{Data Science}
-		{\vspace{-4mm}\begin{itemize}[noitemsep,nolistsep]
-			\small
-			\item Worked with a small team to create a model that predicts IMDB ratings, Rotten Tomatoes user and critic score, and Box Office performance of movies.
-			\item Written in Python using PyTorch and deployed on Apache Spark.
-			\item Manipulated data obtained from multiple sources and joined them into a single appropriate and useful data table.
-		\end{itemize}}
-	\entry
-		{Jan. 2019 - May 2019}
-		{Undergraduate-level Digital Image Processing}
-		{Computer Vision}
-		{{\vspace{-4mm}\begin{itemize}[noitemsep,nolistsep]
-			\small
-			\item Implemented face detection, edge detection/sharpening, noise/lighting correciton, facial recognition, and visual saliency calculation across images.
-			\item Wrote a simple model to analyze driving footage and automatically detect crashes in said footage.
-		\end{itemize}}}
-\end{entrylist}
+    \vspace{3pt}
+    \textbf{Blackjack Bet Optimzer}
+    {\begin{itemize}[noitemsep,nolistsep]
+	\item Created a model that determines optimal bets to maximize returns in a game of Blackjack based on the state of the deck using the Hi-Lo card counting strategy
+    \end{itemize}}
 
+
+    \vspace{3pt}
+    \textbf{Email De-anonymizer}
+    {\begin{itemize}[noitemsep,nolistsep]
+	\item Used a publically availble dataset of emails sent by upper management at Enron to train a model that reads an email and predicts which manager wrote that email
+	\item Accuracy of about 80\%
+    \end{itemize}}}
+
+
+\vspace{12pt}
 %-----------------------------------------------------------------------------------------------------------
 %	Education
 %-----------------------------------------------------------------------------------------------------------
+\resumesect
+    {Education}
+    {\textbf{Colorado State University}\\
+    \normalsize{Jan. 2022 - Dec. 2025 (expected)}
+    {\begin{itemize}[noitemsep,nolistsep]
+	    \item Master's in Computer Science
+	    \item Concentration: Machine Learning and Data Science
+	    \item GPA: 3.67
+    \end{itemize}}
 
-\resumesect{Education}
 
-\begin{entrylist}
-	\entry
-		{Jan. 2022 -- Dec. 2025\\ (expected)}
-		{Master's in Computer Science}
-		{Colorado State University}
-		{{\vspace{-4mm}\begin{itemize}[noitemsep,nolistsep]
-			\small
-			\item GPA: 3.67
-			\item Focus on Machine Learning and Data Science
-		\end{itemize}}}
-	\entry
-		{Jan. 2017 -- May 2019}
-		{Bachelor's in Computer Science}
-		{Metropolitan State University of Denver}
-		{{\vspace{-4mm}\begin{itemize}[noitemsep,nolistsep]
-			\small
-			\item GPA: 4.00
-			\item Graduated Summa Cum Laude and with Highest Honors
-			\item Awarded by the department of Mathematics and Computer Science for "Exceptional accomplishments in Computer Science"
-		\end{itemize}}}
-\end{entrylist}
-
-%-----------------------------------------------------------------------------------------------------------
-%	MISCELLANEOUS
-%-----------------------------------------------------------------------------------------------------------
-
-\vspace{6pt}
-\begin{minipage}[t]{0.5\textwidth}
-	\vspace{-\baselineskip}
-
-	\resumesect{\small Languages}
-	\boldwithparens{Python}{PyTorch, NumPy, Pandas, Flask, OpenCV}
-	\boldwithparens{Java}{Gradle, JSF, JUnit}
-	\boldwithparens{SQL}{PostgresQL, MySQL, SQLite}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.5\textwidth}
-	\vspace{-\baselineskip}
-
-	\resumesect{\small Development Tools}
-	\boldwithparens{Continuous Integration}{Git, Jenkins}
-	\boldwithparens{Linux Administration}{Fedora/Red Hat}
-	\textbf{Jira, Confluence, Docker}\\
-\end{minipage}
-
+    \vspace{3pt}
+    \textbf{Metropolitan State University of Denver}\\
+    \normalsize{Jan. 2017 - May 2019}
+    {\begin{itemize}[noitemsep,nolistsep]
+	    \item Bachelor's in Computer Science
+	    \item Awareded by the department of Computer Science for "Exceptional accomplishments in Computer Science"
+	    \item GPA: 4.00
+    \end{itemize}}}
+\vspace{12pt}
 \end{document}

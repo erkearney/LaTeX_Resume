@@ -14,7 +14,9 @@
 \usepackage{geometry}				% provides ability to adjust page dimensions and margins
 \usepackage{longtable}				% Provides ability to create pages that span multiple pages
 \usepackage{enumitem}				% Provides ordered and unorderd lists
-\usepackage{etoolbox}
+\usepackage{setspace}				% Provides the ability to change line spacing
+
+
 
 %-----------------------------------------------------------------------------------------------------------
 %	PAGE LAYOUT
@@ -40,35 +42,20 @@
 %	CUSTOM COMMANDS
 %-----------------------------------------------------------------------------------------------------------
 
-\newcommand{\resumesect}[1]{			% Argument is the name of the section
-	\vspace{\baselineskip}			% Add whitespace before the section title
-	\vspace{-5mm}
-	\colorbox{black}{\large\textcolor{white}{\MakeUppercase{\textbf{#1}}}}\\
+\newcommand{\resumesect}[2]{			% #1 is the name of the section, #2 is the text of the section
+    \begin{minipage}[t]{0.18\textwidth}
+	\colorbox{black}{\normalsize\textcolor{white}{\MakeUppercase{\textbf{#1}}}}\\
+    \end{minipage}
+    \begin{minipage}[t]{0.82\textwidth}
+	{#2}
+    \end{minipage}
 }
 
-\setlength{\LTpre}{0pt}				% Remove default whitespace before longtable
-\setlength{\LTpost}{0pt}			% Remove default whitespace after longtable
+\newcommand{\experiencesect}[4]{
+    \textbf{#1,}
+    #2
+    \hfill
+    #3
 
-\setlength{\tabcolsep}{0pt}			% Remove spacing between table columns
-
-\newenvironment{entrylist}{
-	\begin{longtable}[H]{l l}
-}{
-	\end{longtable}
-}
-
-\newcommand{\entry}[4]{							% First argument is the date range, second is the position title, third is the program name, fourth is the description
-	\parbox[t]{0.275\textwidth}{					% Use 27.5% of the page
-		#1
-	}%
-	&\parbox[t]{0.725\textwidth}{					% Use the remaining 72.5% of the page
-		\textbf{#2}
-		\hfill							% Fill the remaining horizontal whitespace on the line
-		{\footnotesize \textbf{\textcolor{black}{#3}}}\\	% Right-align the Position title
-		#4
-	}\\\\
-}
-
-\newcommand{\boldwithparens}[2]{
-	\textbf{#1} {\small{({#2})}}\\
+    #4
 }
