@@ -32,7 +32,7 @@
     Awarded by the department of Computer Science for "Exceptional
     accomplishments in Computer Science". GPA: 4.00}}
 
-\vspace{18pt}
+\vspace{12pt}
 %-----------------------------------------------------------------------------------------------------------
 %	Experience
 %-----------------------------------------------------------------------------------------------------------
@@ -45,13 +45,13 @@
     \experiencesect
 	{Software Engineer II}
 	{Joint Polar Satellite System}
-	{Nov. 2021 - Jan. 2023}
+	{Nov. 2021 - Present}
 	{\begin{itemize}[noitemsep,nolistsep]
 	    \item Supported the File Transfer System by correcting bugs discovered by other engineers and end-users
 	    \item Successfully completed build close out while working on
-	    multiple parallel projects, and consistently pulled to provide
+	    multiple parallel projects, and being consistently pulled to provide
 	    operational support, resolve high-priority defects, and respond to
-	    direct client inquiries and requests
+	    direct customer inquiries and requests
 	    \item Developed new features to streamline and simplify development
 	    process
 	    \item Reduced time to complete of background processes from days down to
@@ -81,14 +81,14 @@
 	{\begin{itemize}[noitemsep,nolistsep]
 	    \item Wrote clean, low overhead unit and functional tests
 	    \item Revived dead scripts, and updated them to IEEE standards at
-	    the client's request, said scripts served as the basis for future
-	    client deliverables
+	    the customer's request, said scripts served as the basis for future
+	    customer deliverables
 	    \item Processed reported issues and discrepancies into work orders
 	    \item Identified high priority issues and worked closely with leadership to help determine which engineer(s) would be best suited to individual tasks
 	\end{itemize}}}
 
 
-\vspace{18pt}
+\vspace{12pt}
 %-----------------------------------------------------------------------------------------------------------
 %	Projects
 %-----------------------------------------------------------------------------------------------------------
@@ -97,37 +97,48 @@
     {\href{https://github.com/erkearney/investing-subreddit-analysis}{\textbf{Investing
     Subreddit Analysis}}
     \begin{itemize}[noitemsep,nolistsep]
+	\item Created a model to analyze performance of various investing related subreddits
 	\item Created script to analyze the sentiment of thousands of comments
 	from \href{reddit.com}{reddit.com} to determine a subreddit's attitude towards a given
 	company
 	\item Assembled portfolios for each subreddit based on their sentiment,
 	and analyzed and compared the performance of these portfolios to
 	determine a 'winner'
-    \end{itemize}
+    \end{itemize}}
+
+    \vspace{3pt}
+    {\textbf{Movie Box Office Predictor}
+    {\begin{itemize}[noitemsep,nolistsep]
+	\item Worked with a small team to create a model that predicts IMDB ratings, Rotten Tomatoes user and critic score, and Box office performance of movies
+	\item Manipulated data obtained from many sources and joined them together into a single data table
+    \end{itemize}}
+
 
     \vspace{3pt}
     \textbf{Email De-anonymizer}
     {\begin{itemize}[noitemsep,nolistsep]
 	\item Used a publically available dataset of emails sent by upper management at Enron to train a model that reads an email and predicts which manager wrote that email
 	\item Accuracy of about 80\%
-    \end{itemize}}}
+    \end{itemize}}
 
 
-\vspace{18pt}
+\vspace{12pt}
 %-----------------------------------------------------------------------------------------------------------
 %	Skills
 %-----------------------------------------------------------------------------------------------------------
 \resumesect
     {Skills}
-    {\setstretch{1.25}
-    \textbf{Python}: NumPy, pandas, PyTorch, OpenCV, Flask, Django, PySpark,
-    pylint, pytest, Jupyer\\
-    \textbf{Java:} Gradle, Groovy, JUnit, Cucumber\\
-    \textbf{JavaScript:} React\\
-    \textbf{Scripting:} Bash, Powershell\\
-    \textbf{Big Data Tools:} SQL (PostgreSQL, MySQL, SQLite,
-    SQLalchemy), Spark, Hadoop\\
-    \textbf{Development Tools:} Linux (Debain/Ubuntu, Fedora/Red Hat), Git, AWS,
-    Jenkins, Jira, Confluence}
+    {\begin{itemize}[noitemsep,nolistsep]
+	\item \textbf{Python}: NumPy, pandas, PyTorch, OpenCV, Flask, Django, PySpark,
+	pylint, pytest, Jupyer
+	\item \textbf{Java:} Gradle, Groovy, JUnit, Cucumber
+	\item \textbf{JavaScript:} React
+	\item \textbf{Scripting:} Bash, Powershell
+	\item \textbf{Big Data Tools:} SQL (PostgreSQL, MySQL, SQLite,
+	SQLalchemy), Spark, Hadoop
+	\item \textbf{Development Tools:} Linux (Debain/Ubuntu, Fedora/Red Hat),
+	Git, AWS, Jenkins, Jira, Confluence
+	\item \textbf{Current TS/SSBI clearance}
+    \end{itemize}}
 
 \end{document}
