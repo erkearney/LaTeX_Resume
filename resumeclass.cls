@@ -27,8 +27,8 @@
 
 \geometry{
 	paper=letterpaper,			% Standard US page size
-	top=1.75cm,
-	bottom=1.75cm,
+	top=1.00cm,
+	bottom=1.00cm,
 	left=2cm,
 	right=2cm,
 	headheight=0.75cm,			% Header height
@@ -42,20 +42,23 @@
 %	CUSTOM COMMANDS
 %-----------------------------------------------------------------------------------------------------------
 
-\newcommand{\resumesect}[2]{			% #1 is the name of the section, #2 is the text of the section
-    \begin{minipage}[t]{0.18\textwidth}
-	\colorbox{black}{\normalsize\textcolor{white}{\MakeUppercase{\textbf{#1}}}}\\
-    \end{minipage}
-    \begin{minipage}[t]{0.82\textwidth}
-	{#2}
-    \end{minipage}
+%\newcommand{\resumesect}[2]{			% #1 is the name of the section, #2 is the text of the section
+%    \begin{minipage}[t]{0.18\textwidth}
+%	\colorbox{black}{\normalsize\textcolor{white}{\MakeUppercase{\textbf{#1}}}}\\
+%    \end{minipage}
+%    \begin{minipage}[t]{0.82\textwidth}
+%	{#2}
+%    \end{minipage}
+%}
+
+\newcommand{\resumesect}[2]{		       % #1: Section name, #2: Section text
+    \colorbox{black}{\normalsize\textcolor{white}{\MakeUppercase{\textbf{#1}}}}
+    \vspace{5pt}\\
+    {#2}
 }
 
-\newcommand{\experiencesect}[4]{
-    \textbf{#1,}
-    #2
-    \hfill
-    #3
+\newcommand{\experiencesect}[4]{	      % #1: Title, #2: Position Name, #3: Dates, #4: Text
+    \large{\textbf{{#1}}} - \normalsize{{#2}} \hfill \normalsize{{#3}}
 
-    #4
+    \normalsize{{#4}}
 }
